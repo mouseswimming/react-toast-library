@@ -1,0 +1,79 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toast-container {
+  position: fixed;
+  z-index: 9999;
+  width: 200px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast {
+  background: white;
+  color: #242424;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.toast-container.top-left {
+  top: 0;
+  left: 0;
+}
+
+.toast-container.top-right {
+  top: 0;
+  right: 0;
+}
+
+.toast-container.top-center {
+  top: 0;
+  left: 50%;
+  translate: -50%;
+}
+
+.toast-container.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.toast-container.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.toast-container.bottom-center {
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  margin: auto;
+}
+
+.form > * {
+  padding: 0.5rem;
+}
